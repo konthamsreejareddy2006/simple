@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Online Examination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Online Examination System</h2>
+
+<div id="login">
+    <input id="name" placeholder="Student Name">
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="exam" style="display:none">
+    <h3>Welcome <span id="student"></span></h3>
+
+    <p>1. Which is a markup language?</p>
+    <input type="radio" name="q1" value="HTML"> HTML
+    <input type="radio" name="q1" value="Java"> Java
+
+    <p>2. Which is used for styling?</p>
+    <input type="radio" name="q2" value="CSS"> CSS
+    <input type="radio" name="q2" value="Python"> Python
+
+    <br><br>
+    <button onclick="result()">Submit</button>
+</div>
+
+<h3 id="output"></h3>
+
+<script src="script.js"></script>
+</body>
+</html>
